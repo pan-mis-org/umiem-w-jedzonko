@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/umiem-w-jedzonko/static/css/main.b5e6ebdd.css",
-    "main.js": "/umiem-w-jedzonko/static/js/main.895ce044.js",
+    "main.css": "/umiem-w-jedzonko/static/css/main.a838ff68.css",
+    "main.js": "/umiem-w-jedzonko/static/js/main.1794a28f.js",
     "static/js/453.3d9ee33f.chunk.js": "/umiem-w-jedzonko/static/js/453.3d9ee33f.chunk.js",
     "static/media/muffin.png": "/umiem-w-jedzonko/static/media/muffin.438f84c0ddee847e81e8.png",
     "static/media/bowl3.png": "/umiem-w-jedzonko/static/media/bowl3.3242804412e9ccdc29d9.png",
@@ -27,12 +27,13 @@
     "static/media/mismis.gif": "/umiem-w-jedzonko/static/media/mismis.d2c137ab64b945ee078e.gif",
     "index.html": "/umiem-w-jedzonko/index.html",
     "static/media/order.svg": "/umiem-w-jedzonko/static/media/order.d576793d7081ee56218ec6e3563bc177.svg",
-    "main.b5e6ebdd.css.map": "/umiem-w-jedzonko/static/css/main.b5e6ebdd.css.map",
-    "main.895ce044.js.map": "/umiem-w-jedzonko/static/js/main.895ce044.js.map",
+    "static/media/redo.svg": "/umiem-w-jedzonko/static/media/redo.876caac7ada4b9ab5dcf823dccebfd57.svg",
+    "main.a838ff68.css.map": "/umiem-w-jedzonko/static/css/main.a838ff68.css.map",
+    "main.1794a28f.js.map": "/umiem-w-jedzonko/static/js/main.1794a28f.js.map",
     "453.3d9ee33f.chunk.js.map": "/umiem-w-jedzonko/static/js/453.3d9ee33f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b5e6ebdd.css",
-    "static/js/main.895ce044.js"
+    "static/css/main.a838ff68.css",
+    "static/js/main.1794a28f.js"
   ]
 }
