@@ -1,0 +1,207 @@
+.App {
+  text-align: center;
+  margin: 50px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.mb-4 {
+  margin-bottom: 16px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.gap-4 {
+  gap: 16px;
+}
+
+.wrapper {
+  max-width: 450px;
+  padding: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  /* background: #343436; */
+}
+
+@keyframes circle {
+  from {
+    transform: scale(0);
+    opacity: 1;
+  }
+  to {
+    transform: scale(14);
+    opacity: 0;
+  }
+}
+
+.circle {
+  /*   margin: 0 auto; */
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 24px;
+  left: 55px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.draw-btn {
+  position: relative;
+  width: 120px;
+  height: 60px;
+  color: #222 !important;
+  font-weight: bold;
+  background-color: #fff !important;
+  font-weight: 600 !important;
+  overflow: hidden;
+  margin-top: 40px !important;
+}
+
+.one {
+  animation: circle 6s 4s infinite linear;
+  background: rgba(34, 139, 34, 0.5);
+}
+
+.two {
+  animation: circle 6s 2s infinite linear;
+  background: rgba(30, 143, 255, 0.5);
+}
+
+.three {
+  animation: circle 6s 0s infinite linear;
+  background: rgba(255, 99, 71, 0.5);
+}
+
+.food-icon {
+  height: 100px;
+  position: absolute;
+  bottom: 100vh;
+  transform-style: preserve-3d;
+  // z-index: 10;
+}
+
+.wrap {
+  perspective-origin: 50% 50%;
+}
+
+$total: 10;
+@for $i from 1 through $total {
+  $time: round($i * 5 / 3) + 20 + s;
+  .food-icon:nth-child(#{$i}) {
+    left: random(100) * 1%;
+    animation: raise#{$i} 6, raise#{$i + $total};
+    animation-duration: 20s, 8 + random(20) + s;
+    animation-delay: round($i * 5 / 3) + s, $time;
+    animation-timing-function: linear, linear;
+    animation-iteration-count: 1, infinite;
+
+    @keyframes raise#{$i} {
+      25% {
+        bottom: 50vh;
+        left: random(100) * 1%;
+      }
+      50% {
+        bottom: -100px;
+        left: random(100) * 1%;
+      }
+      51% {
+        bottom: -110px;
+        left: -100px;
+      }
+      52% {
+        bottom: 100vh;
+        left: -100px;
+      }
+      53% {
+        bottom: 100vh;
+        left: random(100) * 1%;
+      }
+      75% {
+        bottom: 50vh;
+        left: random(100) * 1%;
+      }
+      100% {
+        bottom: -100px;
+        left: random(100) * 1%;
+      }
+    }
+  }
+  @keyframes raise#{$i + $total} {
+    0% {
+      bottom: 100vh;
+      left: random(100) * 1%;
+    }
+    50% {
+      bottom: 50vh;
+      left: random(100) * 1%;
+    }
+    100% {
+      bottom: -100px;
+      left: random(100) * 1%;
+    }
+  }
+}
+
+.form-wrapper {
+  background: rgb(255 255 255 / 80%);
+  z-index: 3;
+  position: relative;
+  padding: 20px;
+}
+
+.mb-1 {
+  margin-bottom: 4px;
+}
+
+.mis-gif {
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    right: calc(20% + 50px);
+    bottom: 20vh;
+    height: 300px;
+  }
+  height: calc(100vh - 700px);
+  margin-top: 100px;
+}
