@@ -10,7 +10,7 @@ import food2 from "./food-icons/food2.png";
 import food3 from "./food-icons/food3.png";
 import mis from "./food-icons/mis.gif";
 
-export const Loading = ({ winningOption, moveBack }) => {
+export const Loading = ({ winningOption, moveBack, url }) => {
   return (
     <div class="main-wrapper">
       <div>
@@ -23,7 +23,13 @@ export const Loading = ({ winningOption, moveBack }) => {
             {/* <div className="circle2 one"></div>
             <div className="circle2 two"></div>
             <div className="circle2 three"></div> */}
-            <span>{winningOption}</span>
+            {url ? (
+              <a href={url} target="_blank">
+                {winningOption}
+              </a>
+            ) : (
+              <span>{winningOption}</span>
+            )}
             {/* </div> */}
           </div>
           <ul class="orbit-icon-container">

@@ -49,6 +49,8 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 18px;
+  position: relative;
+  z-index: 3783783;
   @media screen and (min-width: 768px) {
     font-size: 24px;
   }
@@ -68,6 +70,8 @@ body {
   aspect-ratio: 1 / 1;
   display: grid;
   place-items: center;
+  justify-content: center;
+  align-items: center;
 
   .orbit-icon-container {
     position: absolute;

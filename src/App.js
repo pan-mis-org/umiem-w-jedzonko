@@ -19,6 +19,7 @@ import { CookForm } from "./CookForm";
 import { OrderForm } from "./OrderForm";
 
 function App() {
+  const [url, setUrl] = useState(null);
   const [winningOption, setWinningOption] = useState();
   const [stage, setStage] = useState("choose");
   const [foodSource, setFoodSource] = useState(1);
@@ -81,6 +82,9 @@ function App() {
       const winingOption = optionsToChooseFrom[randomIndex];
       setStage("loading");
       setWinningOption(winingOption.name);
+      if (winingOption.url) {
+        setUrl(winingOption.url);
+      }
     },
   });
   const choiceStage = stage === "choose";
@@ -157,6 +161,7 @@ function App() {
             setStage("choose");
             setWinningOption(null);
           }}
+          url={url}
         />
       )}
     </>

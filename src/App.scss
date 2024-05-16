@@ -137,6 +137,10 @@ body {
   perspective-origin: 50% 50%;
 }
 
+a {
+  cursor: pointer;
+}
+
 $total: 10;
 @for $i from 1 through $total {
   $time: round($i * 5 / 3) + 20 + s;
@@ -219,7 +223,9 @@ $total: 10;
   height: 200px;
   margin-top: -10px;
   z-index: 20909292;
-  position: relative;
+  position: absolute;
+  bottom: 110px;
+  left: calc(50% - 71px);
 }
 
 .MuiButton-outlined {
