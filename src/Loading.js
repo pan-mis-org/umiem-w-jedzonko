@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./loading.scss";
 import bowl1 from "./food-icons/bowl5.png";
 import bowl2 from "./food-icons/burger.png";
@@ -9,8 +9,18 @@ import food1 from "./food-icons/food1.png";
 import food2 from "./food-icons/food2.png";
 import food3 from "./food-icons/food3.png";
 import mis from "./food-icons/mis.gif";
+import redo from "./icons/redo.svg";
+import IconButton from "@mui/material/IconButton";
+import { useTimeout } from "usehooks-ts";
+import { set } from "lodash";
 
-export const Loading = ({ winningOption, moveBack, url }) => {
+export const Loading = ({ winningOption, moveBack, url, onRedo }) => {
+  // const [delayedWin, setDelayedWin] = useState("");
+  // useEffect(() => {
+  //   setDelayedWin("");
+  // }, [winningOption]);
+  // useTimeout(() => setDelayedWin(winningOption), 400);
+  // console.log(winningOption, delayedWin);
   return (
     <div class="main-wrapper">
       <div>
@@ -71,6 +81,13 @@ export const Loading = ({ winningOption, moveBack, url }) => {
           </li> */}
           </ul>
         </div>
+        <IconButton
+          className="redo-btn"
+          onClick={onRedo}
+          color="rgb(50, 133, 187)"
+        >
+          <img src={redo} height={50} />
+        </IconButton>
       </div>
     </div>
   );

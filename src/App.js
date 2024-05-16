@@ -23,6 +23,7 @@ function App() {
   const [winningOption, setWinningOption] = useState();
   const [stage, setStage] = useState("choose");
   const [foodSource, setFoodSource] = useState(1);
+  const [options, setOptions] = useState([]);
   const order = foodSource === 1;
   const getVariantByKey = (key) =>
     foodSource === key ? "contained" : "outlined";
@@ -50,6 +51,18 @@ function App() {
     ingredients: [],
   };
 
+  const draw = (optionToChoose) => {
+    console.log("indraw", optionToChoose);
+    const randomIndex = Math.floor(Math.random() * optionToChoose.length);
+    const winingOption = optionToChoose[randomIndex];
+    setStage("loading");
+    console.log(winingOption);
+    setWinningOption(winingOption.name);
+    if (winingOption.url) {
+      setUrl(winingOption.url);
+    }
+  };
+
   const formik = useFormik({
     initialValues: order ? orderInitialValues : cookInitialValues,
     onSubmit: (values) => {
@@ -59,36 +72,40 @@ function App() {
       } else {
         data = dishes;
       }
-      const optionsToChooseFrom = Object.entries(values).reduce(
-        (acc, [property, value]) => {
-          if (!isEmpty(value)) {
-            const filteredRestaurants = acc.filter((el) => {
-              const correspondingValue = el[property];
-              if (typeof correspondingValue !== "object") {
-                return value.includes(el[property]);
-              } else {
-                return value.some((val) => correspondingValue.includes(val));
-              }
-            });
-            return filteredRestaurants;
-          }
-          return acc;
-        },
-        data
-      );
-      const randomIndex = Math.floor(
-        Math.random() * optionsToChooseFrom.length
-      );
-      const winingOption = optionsToChooseFrom[randomIndex];
-      setStage("loading");
-      setWinningOption(winingOption.name);
-      if (winingOption.url) {
-        setUrl(winingOption.url);
+      if (Object.values(values).flat().length === 0) {
+        setOptions(data);
+        draw(data);
+      } else {
+        const optionsToChooseFrom = Object.entries(values).reduce(
+          (acc, [property, value]) => {
+            if (!isEmpty(value)) {
+              const filteredRestaurants = acc.filter((el) => {
+                const correspondingValue = el[property];
+                if (typeof correspondingValue !== "object") {
+                  return value.includes(el[property]);
+                } else {
+                  return value.some((val) => correspondingValue.includes(val));
+                }
+              });
+              return filteredRestaurants;
+            }
+            return acc;
+          },
+          data
+        );
+        setOptions(optionsToChooseFrom);
+        if (optionsToChooseFrom.length === 0) {
+          alert("Nic nie spełnia wymagań :(");
+          return;
+        }
+        draw(optionsToChooseFrom);
       }
     },
   });
+
   const choiceStage = stage === "choose";
   const loadingStage = stage === "loading";
+  console.log("winningOption", winningOption);
   return (
     <>
       {choiceStage && (
@@ -162,6 +179,10 @@ function App() {
             setWinningOption(null);
           }}
           url={url}
+          onRedo={() => {
+            setWinningOption("");
+            setTimeout(draw(options), 500);
+          }}
         />
       )}
     </>

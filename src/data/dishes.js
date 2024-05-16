@@ -29,14 +29,14 @@ export const dishes = [
     image: awoczer,
   },
   {
-    name: "Mistrzowska sałatka z bobu i awokado",
+    name: "Sałatka z bobu i awokado",
     url: "https://www.jadlonomia.com/przepisy/mistrzowska-salatka-z-bobu-i-awokado/",
     duration: 1,
     ingredients: ["awokado", "bób"],
     image: bobawo,
   },
   {
-    name: "Najlepsze wegeburgery na świecie",
+    name: "Wegeburgery",
     url: "https://www.jadlonomia.com/przepisy/najlepsze-wegeburgery-na-swiecie/",
     duration: 1,
     ingredients: [
@@ -63,7 +63,7 @@ export const dishes = [
     ingredients: ["mąka", "tofu"],
   },
   {
-    name: "Pyszny makaron azjatycki",
+    name: "Makaron azjatycki",
     duration: 1,
     ingredients: ["makaron chow mein", "tofu"],
   },
@@ -81,5 +81,68 @@ export const dishes = [
     duration: 0,
     ingredients: ["makaron spagetti", "bób", "szpinak"],
     url: "https://kuchnialidla.pl/makaron-z-pesto-z-bobu",
+  },
+  {
+    name: "Kaszotto",
+    duration: 0,
+    ingredients: ["kasza"],
+  },
+  {
+    name: "Gyros z frytkami",
+    duration: 0,
+    ingredients: ["frytki", "gyros", "krajanka sojowa"],
+  },
+  {
+    name: "Dal soczewicowy ze Sri Lanki",
+    duration: 0,
+    ingredients: ["soczewica", "mleczko kokosowe", "cebula"],
+    url: "https://www.jadlonomia.com/przepisy/dahl-soczewicowy-ze-sri-lanki/",
+  },
+
+  {
+    name: "Curry z dyni i nerkowców",
+    duration: 1,
+    ingredients: ["dynia", "bataty", "nerkowce"],
+    url: "https://www.jadlonomia.com/przepisy/curry-z-dyni-i-nerkowcow/",
+  },
+  {
+    name: "Sałatka z komosą ryżową",
+    duration: 2,
+    ingredients: ["pietruszka", "marchew", "burak", "jabłko", "laskowe"],
+    url: "https://www.jadlonomia.com/przepisy/zimowa-saatka-z-komosa-ryzowa/",
+  },
+  {
+    name: "Tajska brukselka",
+    duration: 1,
+    ingredients: ["nerkowce", "brukselka"],
+    url: "https://www.jadlonomia.com/przepisy/bezglutenowa-sroda-tajska-brukselka/",
+  },
+  {
+    name: "Dal z rabarbarem",
+    duration: 1,
+    ingredients: ["rabarbar", "soczewica"],
+    url: "https://www.jadlonomia.com/przepisy/dal-z-rabarbarem/",
+  },
+  {
+    name: "Pierogi z żabki",
+    duration: 0,
+    ingredients: ["pierogi z żabki"],
+  },
+  {
+    name: "Pizka z żabki",
+    duration: 0,
+    ingredients: ["Picka z żabki"],
+  },
+  {
+    name: "Mielone kalafiorowe",
+    duration: 3,
+    ingredients: ["kasz jaglana", "słonecznik", "kalafior"],
+    url: "https://www.jadlonomia.com/przepisy/mielone-kalafiorowe/",
+  },
+  {
+    name: "Bób z karczochami",
+    duration: 1,
+    ingredients: ["bób", "bulion", "mięta", "karczochy"],
+    url: "https://www.jadlonomia.com/przepisy/dal-z-rabarbarem/",
   },
 ];

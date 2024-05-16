@@ -191,7 +191,7 @@ body {
 
 .winning-circle-wrapper {
   animation: grow 2s linear;
-  animation-delay: 1s;
+  animation-delay: 0.9s;
   width: 0;
   height: 0;
   border-radius: 50%;
@@ -246,4 +246,15 @@ body {
   text-transform: uppercase;
   // @media screen and (max-width: 768px) {
   // }
+}
+
+.redo-btn {
+  margin-left: auto !important;
+  margin-right: auto !important;
+
+  display: block !important;
+  margin-top: 30px !important;
+  img {
+    color: rgb(50, 133, 187);
+  }
 }
