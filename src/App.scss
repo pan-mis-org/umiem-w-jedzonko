@@ -1,8 +1,11 @@
+* {
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
   padding: 20px;
   height: 100vh;
-
+  overflow: hidden;
   @media screen and (min-width: 768px) {
     padding: 50px;
   }
@@ -196,7 +199,10 @@ $total: 10;
   background: rgb(255 255 255 / 80%);
   z-index: 3;
   position: relative;
-  padding: 20px;
+  padding: 12px;
+  @media screen and (min-width: 768px) {
+    padding: 20px;
+  }
 }
 
 .mb-1 {
@@ -212,6 +218,8 @@ $total: 10;
   }
   height: 200px;
   margin-top: -10px;
+  z-index: 20909292;
+  position: relative;
 }
 
 .MuiButton-outlined {
