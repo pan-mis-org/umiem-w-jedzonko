@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/umiem-w-jedzonko/static/css/main.6776ccd2.css",
-    "main.js": "/umiem-w-jedzonko/static/js/main.ebe75fc1.js",
+    "main.css": "/umiem-w-jedzonko/static/css/main.192c9195.css",
+    "main.js": "/umiem-w-jedzonko/static/js/main.aaaa2e1b.js",
     "static/js/453.3d9ee33f.chunk.js": "/umiem-w-jedzonko/static/js/453.3d9ee33f.chunk.js",
     "static/media/muffin.png": "/umiem-w-jedzonko/static/media/muffin.438f84c0ddee847e81e8.png",
     "static/media/bowl3.png": "/umiem-w-jedzonko/static/media/bowl3.3242804412e9ccdc29d9.png",
@@ -22,17 +22,17 @@
     "static/media/tofu-zmie.jpg": "/umiem-w-jedzonko/static/media/tofu-zmie.de6689d568403e3f8949.jpg",
     "static/media/dal-kalafior.jpeg": "/umiem-w-jedzonko/static/media/dal-kalafior.8700cc47a083f3a50702.jpeg",
     "static/media/bob-awo.jpg": "/umiem-w-jedzonko/static/media/bob-awo.01b2efd94b50dc857055.jpg",
-    "static/media/hungry-mis.gif": "/umiem-w-jedzonko/static/media/hungry-mis.24fa762aae6266e4b022.gif",
     "static/media/bowl2.png": "/umiem-w-jedzonko/static/media/bowl2.aa3874b9fd3167d15ae8.png",
     "static/media/food.png": "/umiem-w-jedzonko/static/media/food.e3b3f7bbe9d3143c75e5.png",
+    "static/media/mismis.gif": "/umiem-w-jedzonko/static/media/mismis.d2c137ab64b945ee078e.gif",
     "index.html": "/umiem-w-jedzonko/index.html",
     "static/media/order.svg": "/umiem-w-jedzonko/static/media/order.d576793d7081ee56218ec6e3563bc177.svg",
-    "main.6776ccd2.css.map": "/umiem-w-jedzonko/static/css/main.6776ccd2.css.map",
-    "main.ebe75fc1.js.map": "/umiem-w-jedzonko/static/js/main.ebe75fc1.js.map",
+    "main.192c9195.css.map": "/umiem-w-jedzonko/static/css/main.192c9195.css.map",
+    "main.aaaa2e1b.js.map": "/umiem-w-jedzonko/static/js/main.aaaa2e1b.js.map",
     "453.3d9ee33f.chunk.js.map": "/umiem-w-jedzonko/static/js/453.3d9ee33f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6776ccd2.css",
-    "static/js/main.ebe75fc1.js"
+    "static/css/main.192c9195.css",
+    "static/js/main.aaaa2e1b.js"
   ]
 }
