@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/umiem-w-jedzonko/static/css/main.192c9195.css",
+    "main.css": "/umiem-w-jedzonko/static/css/main.d6ecea34.css",
     "main.js": "/umiem-w-jedzonko/static/js/main.aaaa2e1b.js",
     "static/js/453.3d9ee33f.chunk.js": "/umiem-w-jedzonko/static/js/453.3d9ee33f.chunk.js",
     "static/media/muffin.png": "/umiem-w-jedzonko/static/media/muffin.438f84c0ddee847e81e8.png",
@@ -27,12 +27,12 @@
     "static/media/mismis.gif": "/umiem-w-jedzonko/static/media/mismis.d2c137ab64b945ee078e.gif",
     "index.html": "/umiem-w-jedzonko/index.html",
     "static/media/order.svg": "/umiem-w-jedzonko/static/media/order.d576793d7081ee56218ec6e3563bc177.svg",
-    "main.192c9195.css.map": "/umiem-w-jedzonko/static/css/main.192c9195.css.map",
+    "main.d6ecea34.css.map": "/umiem-w-jedzonko/static/css/main.d6ecea34.css.map",
     "main.aaaa2e1b.js.map": "/umiem-w-jedzonko/static/js/main.aaaa2e1b.js.map",
     "453.3d9ee33f.chunk.js.map": "/umiem-w-jedzonko/static/js/453.3d9ee33f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.192c9195.css",
+    "static/css/main.d6ecea34.css",
     "static/js/main.aaaa2e1b.js"
   ]
 }
