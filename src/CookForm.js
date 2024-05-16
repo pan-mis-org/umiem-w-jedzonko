@@ -22,6 +22,7 @@ export const CookForm = ({ formik }) => {
       <FormControl className="mb-1">
         <FormLabel>Czas przyrządzania</FormLabel>
         <Select
+          placeholder=""
           clearable
           options={durationLevel}
           name="duration"
@@ -38,6 +39,7 @@ export const CookForm = ({ formik }) => {
       <FormControl className="mb-1">
         <FormLabel>Co masz w lodówce</FormLabel>
         <Select
+          placeholder=""
           isMulti
           clearable
           options={allIngredients.map((ingredient) => ({

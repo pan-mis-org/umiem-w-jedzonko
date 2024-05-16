@@ -143,7 +143,7 @@ function App() {
                 </form>
               </div>
               <img
-                src={require("./food-icons/hungry-mis.gif")}
+                src={require("./food-icons/mismis.gif")}
                 className="mis-gif"
               />
             </>

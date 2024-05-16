@@ -35,6 +35,7 @@ export const OrderForm = ({ formik }) => {
       <FormControl className="mb-1">
         <FormLabel>Poziom cenowy</FormLabel>
         <Select
+          placeholder=""
           clearable
           options={priceLevels}
           name="priceLevel"
@@ -51,6 +52,7 @@ export const OrderForm = ({ formik }) => {
       <FormControl className="mb-1">
         <FormLabel>Kaloryczność</FormLabel>
         <Select
+          placeholder=""
           isMulti
           clearable
           options={fatLevels}
@@ -68,6 +70,7 @@ export const OrderForm = ({ formik }) => {
       <FormControl className="mb-1">
         <FormLabel>Dostępność pieszo</FormLabel>
         <Select
+          placeholder=""
           isMulti
           clearable
           options={walkingDistances}
@@ -84,6 +87,7 @@ export const OrderForm = ({ formik }) => {
       <FormControl className="mb-1">
         <FormLabel>Opcja zamówienia</FormLabel>
         <Select
+          placeholder=""
           isMulti
           clearable
           options={orderOptions}
