@@ -58,9 +58,7 @@ function App() {
     setStage("loading");
     console.log(winingOption);
     setWinningOption(winingOption.name);
-    if (winingOption.url) {
-      setUrl(winingOption.url);
-    }
+    setUrl(winingOption.url ?? null);
   };
 
   const formik = useFormik({
